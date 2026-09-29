@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="beneficios.html">Benefícios</a> |
+            <a href="exercicios.html">Exercícios</a> |
+            <a href="cardio.html">Cardio</a> |
+            <a href="forms.html">Formulario</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Formulário de interesse</h2>
+
+        <form>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </p>
+
+            <p>
+                <label for="data">Data para começar:</label>
+                <input type="date" id="data" name="data" required>
+            </p>
+
+            <p>
+                <label for="objetivo">Objetivo:</label>
+                <input list="objetivos" id="objetivo" name="objetivo" placeholder="Escolha seu objetivo" required>
+
+                <datalist id="objetivos">
+                    <option value="Ganhar massa muscular">
+                    <option value="Emagrecer">
+                    <option value="Melhorar o condicionamento">
+                    <option value="Aumentar a força">
+                    <option value="Melhorar a saúde">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="experiencia">Nível de experiência:</label>
+                <input type="range" id="experiencia" name="experiencia" min="0" max="10">
+            </p>
+
+            <p>
+                <label for="arquivo">Envie uma ficha ou documento:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </p>
+
+            <p>
+                <button type="submit">Enviar formulário</button>
+            </p>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Data da prova</h2>
+
+        <p>
+            A prova foi realizada no dia
+            <time datetime="DATA_DA_PROVA">29/09/2026</time>.
+        </p>
+    </section>
+</body>
+
+</html>
